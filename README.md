@@ -1,7 +1,8 @@
 # FrontMarketplace
 
 ## Estructura del proyecto.
-``📦 src
+```plaintext
+📦 src
  ┣ 📂 app                     # Carpeta principal de la aplicación
  ┃ ┣ 📂 components            # Componentes reutilizables
  ┃ ┃ ┣ 📂 card-product        # Componente de tarjeta de producto
@@ -83,5 +84,5 @@
  ┣ 📜 .gitignore              # Archivos y carpetas a ignorar en Git
  ┣ 📜 Dockerfile              # Archivo para construir la imagen Docker
  ┗ 📜 README.md     
-``
+```
 
