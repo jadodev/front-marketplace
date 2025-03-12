@@ -1,60 +1,87 @@
 # FrontMarketplace
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.2.
+## Estructura del proyecto.
+``📦 src
+ ┣ 📂 app                     # Carpeta principal de la aplicación
+ ┃ ┣ 📂 components            # Componentes reutilizables
+ ┃ ┃ ┣ 📂 card-product        # Componente de tarjeta de producto
+ ┃ ┃ ┃ ┣ 📜 card-product.component.css
+ ┃ ┃ ┃ ┣ 📜 card-product.component.html
+ ┃ ┃ ┃ ┣ 📜 card-product.component.spec.ts
+ ┃ ┃ ┃ ┗ 📜 card-product.component.ts
+ ┃ ┃ ┣ 📂 cart-icon           # Icono del carrito de compras
+ ┃ ┃ ┃ ┣ 📜 cart-icon.component.css
+ ┃ ┃ ┃ ┣ 📜 cart-icon.component.html
+ ┃ ┃ ┃ ┣ 📜 cart-icon.component.spec.ts
+ ┃ ┃ ┃ ┗ 📜 cart-icon.component.ts
+ ┃ ┃ ┣ 📂 cart                # Carrito de compras
+ ┃ ┃ ┃ ┣ 📜 cart.component.css
+ ┃ ┃ ┃ ┣ 📜 cart.component.html
+ ┃ ┃ ┃ ┣ 📜 cart.component.spec.ts
+ ┃ ┃ ┃ ┗ 📜 cart.component.ts
+ ┃ ┃ ┣ 📂 header              # Encabezado de la aplicación
+ ┃ ┃ ┃ ┣ 📜 header.component.css
+ ┃ ┃ ┃ ┣ 📜 header.component.html
+ ┃ ┃ ┃ ┣ 📜 header.component.spec.ts
+ ┃ ┃ ┃ ┗ 📜 header.component.ts
+ ┃ ┃ ┣ 📂 information-before-payment  # Información previa al pago
+ ┃ ┃ ┃ ┣ 📜 information-before-payment.component.css
+ ┃ ┃ ┃ ┣ 📜 information-before-payment.component.html
+ ┃ ┃ ┃ ┣ 📜 information-before-payment.component.spec.ts
+ ┃ ┃ ┃ ┗ 📜 information-before-payment.component.ts
+ ┃ ┃ ┣ 📂 insufficient-funds-modal    # Modal de fondos insuficientes
+ ┃ ┃ ┃ ┣ 📜 insufficient-funds-modal.component.css
+ ┃ ┃ ┃ ┣ 📜 insufficient-funds-modal.component.html
+ ┃ ┃ ┃ ┣ 📜 insufficient-funds-modal.component.spec.ts
+ ┃ ┃ ┃ ┗ 📜 insufficient-funds-modal.component.ts
+ ┃ ┃ ┣ 📂 order-summary        # Resumen de la orden
+ ┃ ┃ ┃ ┣ 📜 order-summary.component.css
+ ┃ ┃ ┃ ┣ 📜 order-summary.component.html
+ ┃ ┃ ┃ ┣ 📜 order-summary.component.spec.ts
+ ┃ ┃ ┃ ┗ 📜 order-summary.component.ts
+ ┃ ┃ ┣ 📂 payment-success-modal # Modal de pago exitoso
+ ┃ ┃ ┃ ┣ 📜 payment-success-modal.component.css
+ ┃ ┃ ┃ ┣ 📜 payment-success-modal.component.html
+ ┃ ┃ ┃ ┣ 📜 payment-success-modal.component.spec.ts
+ ┃ ┃ ┃ ┗ 📜 payment-success-modal.component.ts
+ ┃ ┃ ┣ 📂 products             # Lista de productos
+ ┃ ┃ ┃ ┣ 📜 products.component.css
+ ┃ ┃ ┃ ┣ 📜 products.component.html
+ ┃ ┃ ┃ ┣ 📜 products.component.spec.ts
+ ┃ ┃ ┃ ┗ 📜 products.component.ts
+ ┃ ┃ ┣ 📂 search              # Barra de búsqueda
+ ┃ ┃ ┃ ┣ 📜 search.component.css
+ ┃ ┃ ┃ ┣ 📜 search.component.html
+ ┃ ┃ ┃ ┣ 📜 search.component.spec.ts
+ ┃ ┃ ┃ ┗ 📜 search.component.ts
+ ┃ ┃ ┣ 📂 slider              # Carrusel de imágenes
+ ┃ ┃ ┃ ┣ 📜 slider.component.css
+ ┃ ┃ ┃ ┣ 📜 slider.component.html
+ ┃ ┃ ┃ ┣ 📜 slider.component.spec.ts
+ ┃ ┃ ┃ ┗ 📜 slider.component.ts
+ ┃ ┣ 📂 pages                 # Páginas principales de la aplicación
+ ┃ ┃ ┗ 📂 home                # Página de inicio
+ ┃ ┃ ┃ ┣ 📜 home.component.css
+ ┃ ┃ ┃ ┣ 📜 home.component.html
+ ┃ ┃ ┃ ┣ 📜 home.component.spec.ts
+ ┃ ┃ ┃ ┗ 📜 home.component.ts
+ ┃ ┣ 📂 services              # Servicios de la aplicación
+ ┃ ┃ ┣ 📂 payment             # Servicio de pagos
+ ┃ ┃ ┣ 📂 serviceCart         # Servicio del carrito de compras
+ ┃ ┃ ┗ 📂 serviceProduct      # Servicio de productos
+ ┃ ┃ ┗ 📂 serviceSearch       # Servicio de búsqueda
+ ┃ ┣ 📜 app.component.css
+ ┃ ┣ 📜 app.component.html
+ ┃ ┣ 📜 app.component.spec.ts
+ ┃ ┣ 📜 app.component.ts
+ ┃ ┣ 📜 app.config.ts         # Configuración de la aplicación
+ ┃ ┣ 📜 app.routes.ts         # Configuración de rutas
+ ┣ 📜 index.html              # Página principal de la aplicación
+ ┣ 📜 main.ts                 # Punto de entrada de la aplicación
+ ┣ 📜 styles.css              # Estilos globales
+ ┣ 📜 .editorconfig           # Configuración del editor
+ ┣ 📜 .gitignore              # Archivos y carpetas a ignorar en Git
+ ┣ 📜 Dockerfile              # Archivo para construir la imagen Docker
+ ┗ 📜 README.md     
+``
 
-## Development server
-
-To start a local development server, run:
-
-```bash
-ng serve
-```
-
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
-# front-marketplace
