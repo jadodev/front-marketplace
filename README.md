@@ -87,7 +87,7 @@
 ```
 # Proyecto Angular: Marketplace
 
-Este proyecto es una aplicación frontend desarrollada en **Angular** que sigue una estructura **modular y escalable**, diseñada para facilitar el mantenimiento y la expansión del código. La aplicación está desplegada en un entorno de staging y puede ser ejecutada localmente utilizando Docker.
+Este proyecto es una aplicación frontend desarrollada en **Angular** que sigue una estructura **modular y escalable**, diseñada para facilitar el mantenimiento y la expansión del código.
 
 ## Endpoint del Frontend
 
