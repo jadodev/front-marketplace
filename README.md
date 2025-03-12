@@ -122,7 +122,9 @@ Para ejecutar el proyecto localmente, puedes utilizar Docker. A continuación, s
 ```bash
   docker run -p 4200:80 marketplace
 ```
+### Funcionalidad:
 
+#### Esta app permite almacenar productos en el carrito, filtrar productos y hacer compras con la tarjeta propia de **Bank Inc** , pero primero debes registrarte en [https://staging.d1pxievg15tb8f.amplifyapp.com/auth](https://staging.d1pxievg15tb8f.amplifyapp.com/auth).
 
 
 
