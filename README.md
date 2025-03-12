@@ -85,4 +85,52 @@
  ┣ 📜 Dockerfile              # Archivo para construir la imagen Docker
  ┗ 📜 README.md     
 ```
+# Proyecto Angular: Marketplace
+
+Este proyecto es una aplicación frontend desarrollada en **Angular** que sigue una estructura **modular y escalable**, diseñada para facilitar el mantenimiento y la expansión del código. La aplicación está desplegada en un entorno de staging y puede ser ejecutada localmente utilizando Docker.
+
+## Endpoint del Frontend
+
+La aplicación está desplegada en S3 + Amplify y puede ser accedida a través del siguiente enlace:
+
+**Frontend Tienda:** [https://staging.d2bc1j4y9fmfbf.amplifyapp.com/home](https://staging.d2bc1j4y9fmfbf.amplifyapp.com/home)
+
+## Despliegue Local con Docker
+
+Para ejecutar el proyecto localmente, puedes utilizar Docker. A continuación, se detallan los pasos necesarios para desplegar la aplicación en tu entorno local.
+
+### Requisitos Previos
+
+- **Docker** instalado en tu máquina. Puedes descargarlo desde [aquí](https://www.docker.com/get-started).
+
+### Pasos para Desplegar el Proyecto
+
+1. **Clona el repositorio** en tu máquina local:
+
+   ```bash
+   git clone https://github.com/tu-usuario/tu-repositorio.git](https://github.com/jadodev/front-marketplace.git
+   ```
+
+2.**Ingresa a la raíz del proyecto en tu terminal y ejecuta 
+
+```bash
+  docker build -t marketplace .
+```
+
+3**Al terminar el proceso ejecuta el siguiente comando para iniciar la aplicacion:
+
+```bash
+  docker run -p 4200:80 marketplace
+```
+
+
+
+
+
+
+
+
+
+
+
 
