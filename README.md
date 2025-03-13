@@ -1,7 +1,7 @@
 # FrontMarketplace
 
 ## Video.
-[![Video de YouTube](https://img.youtube.com/vi/0HygzS95JYQ/maxresdefault.jpg)](https://youtu.be/0HygzS95JYQ)
+[![Video de YouTube](miniatura.png)](https://youtu.be/0HygzS95JYQ)
 
 # Proyecto Angular: Marketplace
 
