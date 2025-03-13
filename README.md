@@ -1,7 +1,8 @@
 # FrontMarketplace
 
 ## Video.
-[![Video de YouTube](miniatura.png)](https://youtu.be/0HygzS95JYQ)
+[![Ver en YouTube](miniatura.png)](https://youtu.be/0HygzS95JYQ "Haz clic para abrir en una nueva pestaña")
+
 
 # Proyecto Angular: Marketplace
 
